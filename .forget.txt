@@ -1,3 +1,30 @@
 # List of Unix Commands I sometimes forget
 # Matthew Dunaj
 # matt.rj.dunaj@gmail.com
+
+whoami                                  # current user
+hostname                                # name of this computer
+
+ssh HOST                               # connect to HOST
+ssh USER@HOST                          # connect to HOST as USER
+ssh -t HOST1 HOST2                     # connect to HOST2 through HOST1
+
+python -m SimpleHTTPServer 8000        # python simple server
+
+grep PATTERN                            # search for pattern
+grep -E PATTERN                         # extended regex
+egrep PATTERN                           # extended regex
+grep -o                                 # only print the matched pattern
+grep -v                                 # invert match
+grep -A10                               # print match + 10 lines after
+grep -B10                               # print match + 10 lines before
+grep -10                                # same as grep -A10 -B10
+grep -a -b -B100 -A100 phrase /dev/sda3 # recover deleted files
+egrep -o "\w+([._-]\w)*@\w+([._-]\w)*\.\w{2,4}" -e  # email addresses
+
+chmod -r                                # remove read permissions
+chmod -w                                # remove write permissions
+chmod -x                                # remove execute permissions
+chmod +r                                # add read permissions
+chmod +w                                # add write permissions
+chmod +x                                # add execute permissions
