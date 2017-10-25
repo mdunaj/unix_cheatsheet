@@ -28,3 +28,52 @@ chmod -x                                # remove execute permissions
 chmod +r                                # add read permissions
 chmod +w                                # add write permissions
 chmod +x                                # add execute permissions
+
+ps                                      # display my processes
+ps -u USER                              # ^^^ USER's processes
+ps -ax                                  # all processes on the machine
+ps -axM                                 # all processes and threads
+kill PID                                # kill process with PID
+
+ls                                      # list directory contents
+ls -l                                   # include time, size, etc.
+ls -a                                   # include hidden files
+ls -A                                   # include hidden files, but not . or ..
+ls -t                                   # sort by time
+ls -ltr                                 # newest files last
+ls --color                              # colorize output
+
+mkdir DIR                               # make a directory
+mkdir -p DIR                            # ^^^ make intermediate dirs as needed
+rmdir DIR                               # remove a directory
+rm FILE                                 # remove a file
+rm -r DIR                               # remove directory and files
+rm -rf DIR                              # ^^^ and don't ask any questions
+
+ping google.com                         # Check if a host is up
+ping -c3 google.com                     # Only send 3 packets
+host www.google.com                     # DNS lookup
+dig www.google.com                      # DNS lookup
+nslookup                                # DNS lookup
+nslookup -type=ns eecs.umich.edu        # DNS with authoritative name servers
+dig -x 141.212.106.7                    # reverse DNS lookup
+whois www.google.com                    # domain name registration info
+nmap HOST                               # what ports are open?
+sudo fuser -v -n tcp 80                 # who's using port 80?
+lsof -n -i                              # who's using which ports?
+traceroute                              # route packets take to network host
+telnet HOST 80                          # connect to web server
+tcpdump                                 # watch packets on all network ifcs
+tcpdump -i eth0                         # watch packets on one network interface
+tcpdump tcp                             # only one protocol
+tcpdump port 80                         # only one port
+tcpdump host 1.2.3.4                    # only one host
+tcpdump dst 1.2.3.4                     # only one dest
+tcpdump src 1.2.3.4                     # only one source
+
+
+curl --data "query=aa" http://localhost:5000/query # send POST request
+curl -H "Content-type: application/json" -X POST http://127.0.0.1:5000/ -d '{"message":"Hello World"}'   # POST W/ JSON
+     
+curl ifconfig.me                        # what is my IP address?
+
