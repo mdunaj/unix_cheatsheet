@@ -77,3 +77,7 @@ curl -H "Content-type: application/json" -X POST http://127.0.0.1:5000/ -d '{"me
      
 curl ifconfig.me                        # what is my IP address?
 
+kubectl config get-contexts
+kubectl config use-context <context name>
+kubectl get pods
+kubectl get logs <pod name>
