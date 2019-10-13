@@ -81,3 +81,5 @@ kubectl config get-contexts
 kubectl config use-context <context name>
 kubectl get pods
 kubectl get logs <pod name>
+
+uuidgen | tr "[:upper:]" "[:lower:]"
