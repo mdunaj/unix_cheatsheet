@@ -4,6 +4,7 @@
 
 whoami                                  # current user
 hostname                                # name of this computer
+pwd                                     # shows full path of current working directory
 
 ssh HOST                               # connect to HOST
 ssh USER@HOST                          # connect to HOST as USER
