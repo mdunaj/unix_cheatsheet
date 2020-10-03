@@ -85,3 +85,5 @@ kubectl get logs <pod name>
 uuidgen | tr "[:upper:]" "[:lower:]"
 
 lsof -n -i:8080                         # what is using a port               
+
+sdk use java 11.0.5.hs-adpt             # sdkman switch version
