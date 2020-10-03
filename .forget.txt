@@ -83,3 +83,5 @@ kubectl get pods
 kubectl get logs <pod name>
 
 uuidgen | tr "[:upper:]" "[:lower:]"
+
+lsof -n -i:8080                         # what is using a port               
