@@ -92,3 +92,5 @@ sdk use java 11.0.5.hs-adpt             # sdkman switch version
 unzip myfile.zip                        # unzip a file
 unzip -d ~/Desktop/ myfile.zip          # unzip a file into Desktop directory
 tar xvf  myfile.zip                     # unzip a file with tar
+tar xvf  myfile.zip -C ~/Desktop/       # unzip a file with tar to a specific directory
+
